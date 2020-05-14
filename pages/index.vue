@@ -1,15 +1,18 @@
 <template>
   <div class="container">
     <header-app />
+    <navbar />
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import HeaderApp from '../layouts/HeaderApp'
+import Navbar from '../layouts/Navbar'
 
 export default {
   components: {
+    Navbar,
     HeaderApp,
     Logo
   }
