@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nuxt />
+    <header-app />
+    <navbar />
+    <app-main />
   </div>
 </template>
 
@@ -53,3 +55,15 @@ html {
   background-color: #35495e;
 }
 </style>
+<script>
+  import AppMain from "../pages/index"
+  import HeaderApp from "./HeaderApp"
+  import Navbar from "./Navbar"
+  export default {
+    components: {
+      HeaderApp,
+      Navbar,
+      AppMain
+    }
+  }
+</script>

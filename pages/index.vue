@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <header-app />
-    <navbar />
+    <nuxt />
   </div>
 </template>
 
@@ -11,6 +10,7 @@ import HeaderApp from '../layouts/HeaderApp'
 import Navbar from '../layouts/Navbar'
 
 export default {
+  name: 'AppMain',
   components: {
     Navbar,
     HeaderApp,
