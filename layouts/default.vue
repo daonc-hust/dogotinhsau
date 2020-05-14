@@ -2,6 +2,7 @@
   <div>
     <header-app />
     <navbar />
+<!--    <carousel />-->
     <app-main />
   </div>
 </template>
@@ -59,8 +60,10 @@ html {
   import AppMain from "../pages/index"
   import HeaderApp from "./HeaderApp"
   import Navbar from "./Navbar"
+  import Carousel from "../components/Carousel"
   export default {
     components: {
+      Carousel,
       HeaderApp,
       Navbar,
       AppMain
