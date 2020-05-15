@@ -1,5 +1,5 @@
 <template>
-  <el-carousel trigger="click" height="450px">
+  <el-carousel class="carousel-app" trigger="click" height="450px">
     <el-carousel-item v-for="item in images" :key="item">
       <img class="slide" :src="item" alt="slide">
     </el-carousel-item>

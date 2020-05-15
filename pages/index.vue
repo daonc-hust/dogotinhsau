@@ -8,10 +8,12 @@
 import Logo from '~/components/Logo.vue'
 import HeaderApp from '../layouts/HeaderApp'
 import Navbar from '../layouts/Navbar'
+import Carousel from '../components/Carousel'
 
 export default {
   name: 'AppMain',
   components: {
+    Carousel,
     Navbar,
     HeaderApp,
     Logo
@@ -21,12 +23,9 @@ export default {
 
 <style>
 .container {
-  /*margin: 0 auto;*/
-  /*min-height: 100vh;*/
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  /*text-align: center;*/
+  width: 1200px;
+  margin: 0 auto;
+  /*position: relative;*/
 }
 
 .title {

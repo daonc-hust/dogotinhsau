@@ -68,7 +68,7 @@
 
     .menubar-app {
       margin: 0 auto;
-      width: 1100px;
+      width: 800px;
     }
 
     .el-menu-item {
