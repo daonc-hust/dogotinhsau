@@ -34,6 +34,7 @@
   .product-name {
     text-decoration: none;
     color: cornflowerblue;
+    font-weight: 500;
   }
 
   .price {

@@ -47,6 +47,11 @@
       <section class="section-product-list">
         <divider title="Nội thất phòng ngủ" />
       </section>
+
+      <section class="section-product-list">
+        <divider title="Quy trình của chúng tôi" />
+        <procedure />
+      </section>
     </div>
   </div>
 </template>
@@ -55,10 +60,12 @@
   import Carousel from '../../components/Carousel'
   import Divider from '../../components/Divider'
   import ProductSection from '../../components/ProductSection'
+  import Procedure from '../../components/Procedure'
 
   export default {
     name: 'HomePage',
     components: {
+      Procedure,
       ProductSection,
       Divider,
       Carousel

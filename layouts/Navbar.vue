@@ -65,6 +65,10 @@
     text-align: center;
     margin: 0 auto;
     background: #545c64;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: .5s;
 
     .menubar-app {
       margin: 0 auto;
