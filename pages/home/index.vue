@@ -52,7 +52,20 @@
         <divider title="Quy trình của chúng tôi" />
         <procedure />
       </section>
+
+      <section class="section-product-list">
+        <divider title="Cảm nhận của khách hàng" />
+        <feedback />
+      </section>
+
+      <section class="section-product-list">
+        <divider title="Tin tức" />
+        <div class="post-list">
+          <post v-for="post in posts" :title="post.title" :image-src="post.imageSrc" :date="post.date" :month="post.month" />
+        </div>
+      </section>
     </div>
+    <footer-app />
   </div>
 </template>
 
@@ -61,10 +74,16 @@
   import Divider from '../../components/Divider'
   import ProductSection from '../../components/ProductSection'
   import Procedure from '../../components/Procedure'
+  import Feedback from '../../components/Feedback'
+  import Post from '../../components/Post'
+  import FooterApp from '../../layouts/FooterApp'
 
   export default {
     name: 'HomePage',
     components: {
+      FooterApp,
+      Post,
+      Feedback,
       Procedure,
       ProductSection,
       Divider,
@@ -72,6 +91,19 @@
     },
     data() {
       return {
+        posts: [
+          {
+            title: 'Báo giá sập thờ gỗ mít, gỗ gụ năm 2020',
+            date: 3,
+            month: 5
+          },
+          {
+            title: 'Kích thước bộ bàn ghế tay 10'
+          },
+          {
+            title: 'Làng nghề mộc Canh Nậu, bạn có biết?'
+          }
+        ],
         furnitures: [
           {
             name: 'Tay 12 huong da',
@@ -120,7 +152,7 @@
   }
 
   .section-product-list {
-    margin-top: 20px;
+    margin-top: 28px;
   }
 
   .story {
@@ -142,5 +174,11 @@
         word-break: break-word;
       }
     }
+  }
+
+  .post-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
