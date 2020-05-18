@@ -1,26 +1,26 @@
 <template>
   <div class="navbar-app">
     <el-menu
-      default-active="1"
+      :default-active="activePage"
       class="menubar-app"
       mode="horizontal"
       @select="handleSelect"
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
-      <el-menu-item index="1">
+      <el-menu-item index="">
         <nuxt-link to="/">Trang chủ</nuxt-link>
       </el-menu-item>
-      <el-menu-item index="2">
+      <el-menu-item index="furniture">
         <nuxt-link to="/furniture">Bàn ghế</nuxt-link>
       </el-menu-item>
-      <el-menu-item index="3">
+      <el-menu-item index="tivi-shelf">
         <nuxt-link to="/tivi-shelf">Kệ Tivi</nuxt-link>
       </el-menu-item>
-      <el-menu-item index="4">
+      <el-menu-item index="tree-clock">
         <nuxt-link to="/tree-clock">Đồng hồ cây</nuxt-link>
       </el-menu-item>
-      <el-submenu index="5">
+      <el-submenu index="bedroom">
         <template slot="title">Phòng ngủ</template>
         <el-menu-item index="5-1">
           <nuxt-link to="/bedroom/bed">Giường ngủ</nuxt-link>
@@ -32,7 +32,7 @@
           <nuxt-link to="/bedroom/makeup-table">Bàn trang điểm</nuxt-link>
         </el-menu-item>
       </el-submenu>
-      <el-submenu index="6">
+      <el-submenu index="worship">
         <template slot="title">Đồ thờ</template>
         <el-menu-item index="6-1">
           <nuxt-link to="/worship/an-gian">Án gian</nuxt-link>
@@ -41,10 +41,12 @@
           <nuxt-link to="/worship/sap-tho">Sập thờ</nuxt-link>
         </el-menu-item>
       </el-submenu>
-      <el-menu-item index="7">
+      <el-menu-item index="posts">
         <nuxt-link to="/posts">Bài viết</nuxt-link>
       </el-menu-item>
-      <el-menu-item index="8"><a href="https://www.ele.me" target="_blank">Liên hệ</a></el-menu-item>
+      <el-menu-item index="contact">
+        <nuxt-link to="/contact">Liên hệ</nuxt-link>
+      </el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -52,6 +54,13 @@
 <script>
   export default {
     name: 'navbar',
+    computed: {
+      activePage() {
+        const pathSplit = this.$route.fullPath.split('/')
+        const idMenuActive = pathSplit[1]
+        return idMenuActive
+      }
+    },
     methods: {
       handleSelect() {
 
@@ -78,6 +87,7 @@
     .el-menu-item {
       a {
         text-decoration: none !important;
+        display: block;
       }
     }
   }

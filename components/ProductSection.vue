@@ -112,6 +112,9 @@
       padding-right: 24px;
       text-decoration: none;
       color: cornflowerblue;
+      &:hover {
+        text-decoration: underline;
+      }
 
       &:after {
         content: '>';

@@ -35,6 +35,9 @@
     text-decoration: none;
     color: cornflowerblue;
     font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .price {
