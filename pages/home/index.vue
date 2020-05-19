@@ -4,7 +4,8 @@
     <div class="main">
       <div class="story">
         <div class="content-story">
-          <h3>Làng nghề truyền thống xã Canh Nậu huyện Thạch Thất</h3>
+          <h3>Làng nghề truyền thống xã <span>Canh Nậu</span> huyện Thạch Thất</h3>
+          <br />
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eum, nihil odit placeat quo rem sit. Dicta
             fugiat itaque laboriosam maxime nam obcaecati odit soluta tenetur ut velit. A, delectus.</p>
         </div>
@@ -170,8 +171,12 @@
 
     .content-story {
       h3 {
-        font-size: 36px;
+        font-size: 40px;
         word-break: break-word;
+        /*color: #C4956A;*/
+        span {
+          color: #C4956A;
+        }
       }
     }
   }

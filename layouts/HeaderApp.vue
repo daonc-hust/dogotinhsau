@@ -1,7 +1,13 @@
 <template>
   <div class="header-wrapper">
     <div class="header-app">
-      <div class="logo-app"></div>
+      <div class="logo-app">
+        <div class="side"><span>T</span></div>
+        <div class="side"><span>S</span></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <h3>Đồ gỗ Tình Sáu</h3>
+      </div>
       <div class="icon-head">
         <svg height="80" viewBox="0 0 128 128" width="80" xmlns="http://www.w3.org/2000/svg">
           <g>
@@ -82,6 +88,7 @@
   .header-wrapper {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px 0px;
   }
+
   .header-app {
     margin: 0 auto;
     width: 1100px;
@@ -91,6 +98,88 @@
 
     .logo-app {
       flex: 1;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      transform: scale(1.1);
+
+      h3 {
+        position: absolute;
+        left: 40%;
+        color: #C4956A;
+      }
+    }
+
+    .side {
+      position: absolute;
+      /*width: 100%;*/
+      /*height: 100%;*/
+      width: 30px;
+      height: 30px;
+      background: #C4956A;
+      transform: rotate(45deg);
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* box-shadow: 0 2px 12px 0 rgba(0,0,0,0.3); */
+    }
+
+    .side span {
+      display: block;
+      transform: rotate(-45deg);
+    }
+
+    .side:nth-child(1)::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #C4956A;
+      transform: rotate(45deg);
+      top: -5px;
+      left: 31px;
+    }
+
+    .side:nth-child(2) {
+      left: 50px;
+    }
+
+    .side:nth-child(3) {
+      top: 25px;
+      left: 25px;
+    }
+
+    .side:nth-child(3)::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      transform: rotate(45deg);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      /* #e0e8ef */
+    }
+
+    .side:nth-child(4) {
+      top: -25px;
+      left: 25px;
+    }
+
+    .side:nth-child(4)::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      transform: rotate(45deg);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
     }
 
     .icon-head {

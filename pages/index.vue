@@ -14,8 +14,8 @@ export default {
   name: 'AppMain',
   components: {
     Carousel,
-    Navbar,
-    HeaderApp,
+    // Navbar,
+    // HeaderApp,
     Logo
   }
 }

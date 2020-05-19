@@ -7,7 +7,7 @@
       @select="handleSelect"
       background-color="#545c64"
       text-color="#fff"
-      active-text-color="#ffd04b">
+      active-text-color="#d5b989">
       <el-menu-item index="">
         <nuxt-link to="/">Trang chủ</nuxt-link>
       </el-menu-item>
