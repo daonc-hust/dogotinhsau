@@ -42,6 +42,7 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
   ],
@@ -50,7 +51,11 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    proxy: true
   },
+  serverMiddleware: [
+    { path: '/test', handler: '~/api/user.js' },
+  ],
   /*
   ** Build configuration
   */

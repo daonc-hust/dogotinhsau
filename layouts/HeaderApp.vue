@@ -246,6 +246,7 @@
         font-size: 13px;
         font-weight: 600;
         color: #35495e;
+        margin-top: 5px;
       }
     }
   }

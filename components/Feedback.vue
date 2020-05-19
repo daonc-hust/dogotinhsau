@@ -2,19 +2,19 @@
   <div class="feedback-wrapper">
     <div class="feedback">
       <img class="avatar-customer" src="https://images.theconversation.com/files/175539/original/file-20170626-315-1h7k01d.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" alt="a">
-      <el-rate value="4"></el-rate>
+      <el-rate :value="4"></el-rate>
       <p class="description"></p>
       <p class="address"></p>
     </div>
     <div class="feedback">
       <img class="avatar-customer" src="https://images.theconversation.com/files/175539/original/file-20170626-315-1h7k01d.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" alt="a">
-      <el-rate value="5"></el-rate>
+      <el-rate :value="5"></el-rate>
       <p class="description"></p>
       <p class="address"></p>
     </div>
     <div class="feedback">
       <img class="avatar-customer" src="https://images.theconversation.com/files/175539/original/file-20170626-315-1h7k01d.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" alt="a">
-      <el-rate value="5"></el-rate>
+      <el-rate :value="5"></el-rate>
       <p class="description"></p>
       <p class="address"></p>
     </div>

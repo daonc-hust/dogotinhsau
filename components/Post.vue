@@ -23,11 +23,11 @@
       },
       date: {
         type: Number,
-        default: ''
+        default: 0
       },
       month: {
         type: Number,
-        default: ''
+        default: 0
       }
     },
   }

@@ -86,10 +86,11 @@
     .description {
       margin-top: 10px;
       font-size: 14px;
-      color: black;
+      font-weight: 500;
       span {
         font-weight: bold;
         color: #526488;
+        /*color: #C4956A;*/
       }
     }
   }

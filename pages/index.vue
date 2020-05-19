@@ -5,18 +5,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import HeaderApp from '../layouts/HeaderApp'
-import Navbar from '../layouts/Navbar'
-import Carousel from '../components/Carousel'
 
 export default {
   name: 'AppMain',
   components: {
-    Carousel,
-    // Navbar,
-    // HeaderApp,
-    Logo
   }
 }
 </script>

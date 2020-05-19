@@ -80,6 +80,12 @@
   import FooterApp from '../../layouts/FooterApp'
 
   export default {
+    // async asyncData({ req, res }) {
+    //   console.log('async data===========', req, res)
+    //   const data = this.$axios.get('/test')
+    //   console.log('data=', data)
+    //   return data
+    // },
     name: 'HomePage',
     components: {
       FooterApp,
