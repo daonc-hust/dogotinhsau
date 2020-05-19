@@ -28,6 +28,10 @@ export default {
   /*position: relative;*/
 }
 
+h2 h3 {
+  color: #35495e;
+}
+
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

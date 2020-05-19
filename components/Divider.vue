@@ -19,6 +19,7 @@
     position: relative;
     text-align: center;
     margin-bottom: 10px;
+    color: #35495e;
 
     &:before {
       content: '';

@@ -111,6 +111,7 @@
 
     h3 {
       margin-bottom: 20px;
+      color: #35495e;
 
       &:after {
         content: '';

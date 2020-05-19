@@ -50,6 +50,10 @@
     margin: 0;
   }
 
+  h2 h3 {
+    color: #35495e !important;
+  }
+
   .button--green {
     display: inline-block;
     border-radius: 4px;

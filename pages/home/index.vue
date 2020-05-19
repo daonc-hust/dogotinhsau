@@ -173,7 +173,7 @@
       h3 {
         font-size: 40px;
         word-break: break-word;
-        /*color: #C4956A;*/
+        color: #35495e;
         span {
           color: #C4956A;
         }
