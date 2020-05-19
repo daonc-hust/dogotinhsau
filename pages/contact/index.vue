@@ -3,7 +3,8 @@
     <div class="about">
       <div class="col">
         <h3>Xưởng đồ gỗ Tình Sáu</h3>
-        <img width="100%" height="100%" src="https://dogotinhsau.com/wp-content/uploads/2019/10/do-go-tinh-sau.jpg" alt="xưởng đồ gỗ Tình Sáu">
+<!--        <img width="100%" height="100%" src="https://dogotinhsau.com/wp-content/uploads/2019/10/do-go-tinh-sau.jpg" alt="xưởng đồ gỗ Tình Sáu">-->
+        <img width="100%" height="100%" :src="imgStore" alt="xưởng đồ gỗ Tình Sáu">
       </div>
       <div class="col col-contact">
         <h3>Thông tin liên hệ</h3>
@@ -29,7 +30,9 @@
         Thăng Long.</strong>..) các bạn cứ đi thẳng theo hướng về đại lộ khoảng 18 cây số sẽ đến địa phận huyện <strong>Quốc
         Oai</strong>. Khi đó bạn sẽ nhìn thấy biển chỉ dẫn như trong hình sau đây</p>
       <br />
-      <img src="https://dogotinhsau.com/wp-content/uploads/2020/01/15b014674cd1b58fecc0-1-533x400.jpg" alt="đi Quốc Oai">
+      <div style="text-align: center">
+        <img style="object-fit: cover" src="https://dogotinhsau.com/wp-content/uploads/2020/01/15b014674cd1b58fecc0-1-533x400.jpg" alt="đi Quốc Oai">
+      </div>
       <p>Sau khi rẽ các bạn tiếp tục đi thẳng đến gần hết con đường đê này.</p>
       <br />
       <blockquote><p><em>Có 1 cách nữa là các bạn có thể tiếp tục đi thẳng theo hướng đi về&nbsp;<strong>chùa
@@ -39,7 +42,9 @@
       <p>Tiếp đó, dù bạn đi theo đường nào thì cũng sẽ giao nhau tại biển chỉ dẫn như trong hình dưới đây, đến điểm này
         các bạn tiếp tục đi thẳng về phía đi <strong>Sơn Tây&nbsp;</strong>(tất nhiên là không đi Sơn Tây nhé :D)</p>
       <br />
-      <img src="https://dogotinhsau.com/wp-content/uploads/2020/01/7c5e05d35d65a43bfd74-1-533x400.jpg" alt="đi Sơn Tây">
+      <div style="text-align: center">
+        <img style="object-fit: cover" src="https://dogotinhsau.com/wp-content/uploads/2020/01/7c5e05d35d65a43bfd74-1-533x400.jpg" alt="đi Sơn Tây">
+      </div>
       <br />
       <br />
       <p>Đi thẳng tiếp khoảng 2 cây số nữa các bạn sẽ thấy biển chỉ dẫn <strong>Huyện Phúc Thọ Xã Liên Hiệp</strong> như
@@ -88,26 +93,41 @@
         nghệ xã Canh Nậu huyện Thạch Thất</strong> như hình dưới đây (nhớ là thôn 3 xã <strong>Canh Nậu</strong> các bạn
         nhé, <strong>ko phải xã Dị Nậu)</strong></p>
       <br />
-      <figure id="attachment_3684" aria-describedby="caption-attachment-3684" style="width: 658px" class="wp-caption aligncenter">
-        <img class="wp-image-3684 size-full lazy-load-active" src="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg" data-src="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg" alt="lang nghe canh nau - Liên hệ" width="658" height="397" srcset="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg 658w, https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau-500x302.jpg 500w" data-srcset="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg 658w, https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau-500x302.jpg 500w" sizes="(max-width: 658px) 100vw, 658px" title="Liên hệ">
-        <figcaption id="caption-attachment-3684" class="wp-caption-text">Làng nghề đồ gỗ mỹ nghệ xã Canh Nậu Thạch
-          Thất
-        </figcaption>
-      </figure>
+      <div style="display: flex; justify-content: center">
+        <figure id="attachment_3684" aria-describedby="caption-attachment-3684" style="width: 658px" class="wp-caption aligncenter">
+          <img class="wp-image-3684 size-full lazy-load-active" src="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg" data-src="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg" alt="lang nghe canh nau - Liên hệ" width="658" height="397" srcset="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg 658w, https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau-500x302.jpg 500w" data-srcset="https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau.jpg 658w, https://dogotinhsau.com/wp-content/uploads/2019/10/lang-nghe-canh-nau-500x302.jpg 500w" sizes="(max-width: 658px) 100vw, 658px" title="Liên hệ">
+          <figcaption id="caption-attachment-3684" class="wp-caption-text">Làng nghề đồ gỗ mỹ nghệ xã Canh Nậu Thạch
+            Thất
+          </figcaption>
+        </figure>
+      </div>
       <br />
       <p>Tiếp tục đi thẳng khoảng 100 mét nữa các bạn nhìn thấy cổng chào đường Phúc Lợi như hình dưới đây và chào mừng
         các bạn đến với <strong>Đồ Gỗ Tình Sáu.</strong></p>
       <br />
-      <figure style="width: 1029px" class="wp-caption aligncenter">
-        <img class="size-full lazy-load-active" src="https://dogotinhsau.com/wp-content/uploads/2019/10/do-go-tinh-sau.jpg" data-src="https://dogotinhsau.com/wp-content/uploads/2019/10/do-go-tinh-sau.jpg" width="1029" height="772" title="Liên hệ" alt="do go tinh sau - Liên hệ">
-        <figcaption class="wp-caption-text">Xưởng gỗ Đồ Gỗ Tình Sáu số 1 đường Phúc Lợi</figcaption>
-      </figure>
+      <div style="display: flex; justify-content: center">
+        <figure style="width: 1029px" class="wp-caption aligncenter">
+          <img class="size-full lazy-load-active" src="https://dogotinhsau.com/wp-content/uploads/2019/10/do-go-tinh-sau.jpg" data-src="https://dogotinhsau.com/wp-content/uploads/2019/10/do-go-tinh-sau.jpg" width="1029" height="772" title="Liên hệ" alt="do go tinh sau - Liên hệ">
+          <figcaption class="wp-caption-text">Xưởng gỗ Đồ Gỗ Tình Sáu số 1 đường Phúc Lợi</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+  import { fetchData } from '../../helper/fetchData'
+  import dogo from '../../assets/images/dogo6.JPEG'
 
+  export default {
+    data() {
+      return {
+        imgStore: dogo
+      }
+    },
+    mounted() {
+    }
+  }
 </script>
 
 <style lang="scss">
@@ -172,6 +192,7 @@
     .gallery-item {
       flex: 1;
       padding: 10px;
+
       img {
         width: 100%;
         height: 400px;
@@ -189,8 +210,4 @@
     font-size: 13px;
   }
 
-  img {
-    margin: 0 auto;
-    display: inline-block;
-  }
 </style>

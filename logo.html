@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>logo</title>
+  <style>
+    .container {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+      position: relative;
+    }
+
+    .side {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: #C4956A;
+      transform: rotate(45deg);
+      font-size: 32px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* box-shadow: 0 2px 12px 0 rgba(0,0,0,0.3); */
+
+
+    }
+
+    .side>span {
+      display: block;
+      transform: rotate(-45deg);
+    }
+
+    .side:nth-child(1)::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #C4956A;
+      transform: rotate(45deg);
+      top: -8px;
+      left: 62px;
+    }
+
+    .side:nth-child(2) {
+      left: 100px;
+    }
+
+    .side:nth-child(3) {
+      top: 50px;
+      left: 50px;
+    }
+
+    .side:nth-child(3)::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      transform: rotate(45deg);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      /* #e0e8ef */
+    }
+
+    .side:nth-child(4) {
+      top: -50px;
+      left: 50px;
+    }
+
+    .side:nth-child(4)::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      transform: rotate(45deg);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <div class="side"><span>T</span></div>
+      <div class="side"><span>S</span></div>
+      <div class="side"></div>
+      <div class="side"></div>
+    </div>
+  </div>
+</body>
+</html>

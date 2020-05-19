@@ -61,7 +61,7 @@
       <section class="section-product-list">
         <divider title="Tin tức" />
         <div class="post-list">
-          <post v-for="post in posts" :title="post.title" :image-src="post.imageSrc" :date="post.date" :month="post.month" />
+          <post v-for="(post, idx) in posts" :key="idx" :title="post.title" :image-src="post.imageSrc" :date="post.date" :month="post.month" />
         </div>
       </section>
     </div>
