@@ -61,11 +61,18 @@
     padding-top: 20px;
   }
 
+  @media screen and (min-width: 1200px){
+    .categories {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
   .categories {
     display: flex;
     justify-content: center;
-    width: 1200px;
-    margin: 0 auto;
+    /*width: 1200px;*/
+    /*margin: 0 auto;*/
   }
 
   .category {

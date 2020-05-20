@@ -153,21 +153,28 @@
 </script>
 
 <style lang="scss">
-  .main {
-    width: 1200px;
-    margin: 0 auto;
+  @media screen and (min-width: 1200px){
+    .main {
+      width: 1200px;
+      margin: 0 auto;
+    }
   }
 
   .section-product-list {
     margin-top: 28px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .story {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    width: 1200px;
-    margin: 0 auto;
+    /*width: 1200px;*/
+    /*margin: 0 auto;*/
     height: 400px;
 
     .content-story, .video-intro {

@@ -70,6 +70,13 @@
 </script>
 
 <style lang="scss">
+  .el-menu-item {
+    a {
+      text-decoration: none !important;
+      display: block;
+    }
+  }
+
   .navbar-app {
     text-align: center;
     margin: 0 auto;
@@ -78,17 +85,30 @@
     top: 0;
     z-index: 1000;
     transition: .5s;
+  }
 
-    .menubar-app {
-      margin: 0 auto;
-      width: 800px;
+  @media screen and (max-width: 767px){
+    .navbar-app {
+      display: none;
     }
+  }
 
-    .el-menu-item {
-      a {
-        text-decoration: none !important;
-        display: block;
-      }
+  @media screen and (min-width: 1200px){
+    .navbar-app {
+      text-align: center;
+      margin: 0 auto;
+      background: #545c64;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: .5s;
+
+      /*@media screen and (min-width: 1200px){*/
+        .menubar-app {
+          margin: 0 auto;
+          width: 800px;
+        }
+      /*}*/
     }
   }
   .el-menu--popup {

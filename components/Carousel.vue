@@ -26,6 +26,16 @@
 </script>
 
 <style>
+  @media screen and (max-width: 1199px){
+    .carousel-app {
+      display: none;
+    }
+  }
+  .el-carousel__mask {
+    opacity: 0.3;
+    background: #fff;
+  }
+
   .slide {
     display: block;
     margin: 0 auto;

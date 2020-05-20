@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <header-app />
     <navbar />
     <home-page v-if="isHomePage" />
