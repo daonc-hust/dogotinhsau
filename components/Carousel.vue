@@ -1,5 +1,5 @@
 <template>
-  <el-carousel class="carousel-app" trigger="click" height="450px">
+  <el-carousel class="carousel-app" type="card" trigger="click" height="450px">
     <el-carousel-item v-for="item in images" :key="item">
       <img class="slide" :src="item" alt="slide">
     </el-carousel-item>
@@ -7,13 +7,16 @@
 </template>
 
 <script>
+  import img1 from './../assets/images/banghe.jpg'
+  import img2 from './../assets/images/phongngu.png'
+
   export default {
     name: 'Carousel',
     data() {
       return {
         images: [
-          'https://saigon24gio.files.wordpress.com/2015/12/home-interior-design-background-hd-wallpaper.jpg?w=1365&h=768&crop=1',
-          'https://noithatduongdai.vn/wp-content/uploads/2018/04/phong-tho.jpg',
+          img1,
+          img2,
           'https://noithatvincen.com/public/images/tintuc/thiet-ke-noi-that-tuong-phong-ngu-dep-mat-cho-la-astoria-1217_background.jpg',
           'https://kientrucdmc.com/wp-content/uploads/2015/05/Modern-Kitchen-10-Desktop-Background.jpg'
         ]
@@ -24,6 +27,9 @@
 
 <style>
   .slide {
-    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
   }
 </style>
